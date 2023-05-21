@@ -31,7 +31,9 @@ console.log(searchResults);
     return (
         <div className=''>
          <div className="  px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-10 lg:grid-cols-2  ">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="grid gap-10 lg:grid-cols-2  ">
         <div className="lg:pr-10">
           <a
             href="/"
@@ -105,6 +107,9 @@ console.log(searchResults);
         </div>
         <div>
           <img
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
             className="object-cover w-full h-56  rounded-sm  sm:h-96"
             src="https://i.pinimg.com/564x/de/db/5b/dedb5ba7941216f381e96976b0cca370.jpg"
             alt=""
@@ -112,7 +117,8 @@ console.log(searchResults);
         </div>
       </div>
     </div>  
-    <div className='text-center'>
+    <div data-aos="fade-up"
+     data-aos-duration="3000" className='text-center'>
       <input
         type="text"
         placeholder="Search by Toy Name"
@@ -131,7 +137,8 @@ console.log(searchResults);
         ))}
       </ul>
     </div>
-            <div className='p-10  '>
+            <div data-aos="fade-up"
+     data-aos-duration="3000" className='p-10  '>
         <Table striped={true}>
           <Table.Head className=''>
             <Table.HeadCell>

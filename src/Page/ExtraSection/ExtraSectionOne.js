@@ -2,7 +2,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 const ExtraSectionOne = () => {
     return (
-        <div className="border rounded-full border-green-400 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+        <div data-aos="zoom-out-down" className="border rounded-full border-green-400 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4">
           <div className="text-center">
             <h6 className="text-3xl font-bold text-green-500">

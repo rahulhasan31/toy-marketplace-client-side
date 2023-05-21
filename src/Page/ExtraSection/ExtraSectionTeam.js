@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExtraSectionTeam = () => {
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:">
+        <div data-aos="fade-down" className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:">
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
         <p className="inline-block text-white  mb-4 text-xl font-semibold tracking-wider  uppercase rounded-full bg-green-400 py-3 px-6">
           Our Team
@@ -14,6 +14,7 @@ const ExtraSectionTeam = () => {
       <div className="grid gap-10 mx-auto lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center ">
           <img
+           data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
             src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
             alt="Person"
@@ -25,6 +26,7 @@ const ExtraSectionTeam = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
+           data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
             src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             alt="Person"
@@ -36,6 +38,7 @@ const ExtraSectionTeam = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
+           data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
             src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             alt="Person"
@@ -47,6 +50,7 @@ const ExtraSectionTeam = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
+           data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
             src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             alt="Person"

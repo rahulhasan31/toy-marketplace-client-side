@@ -22,19 +22,29 @@ const ExtraSectionCard = () => {
                     Welcome to the Lamborghini Toys Gallery! Here, you will discover a world of exquisite and captivating Lamborghini-themed toys that embody the spirit of the iconic Italian luxury car brand.
                     </p>
                 </div>
-                <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
+                <div data-aos="fade-up"
+     data-aos-duration="3000" className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
                     <div className="grid grid-cols-2 gap-5">
                         <img
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="2000"
                             className="object-cover w-full h-56 col-span-2 rounded-xl shadow-lg border-2 border-green-500 p-1"
                             src="https://static-01.daraz.com.bd/p/6791e4a3899a96c9b16ff566a0474c5c.jpg"
                             alt=""
                         />
                         <img
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="2000"
                             className="object-cover w-full h-48 rounded shadow-lg border-2 border-green-500 p-1"
                             src="https://i.ytimg.com/vi/1MjAZ7ZXOGk/maxresdefault.jpg"
                             alt=""
                         />
                         <img
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-duration="2000"
                             className="object-cover w-full h-48 rounded shadow-lg border-2 border-green-500 p-1"
                             src="https://images-cdn.ubuy.co.in/633aad0dcb0629168c563ca3-toy-cars-sian-fkp3-metal-model-car-with.jpg"
                             alt=""
