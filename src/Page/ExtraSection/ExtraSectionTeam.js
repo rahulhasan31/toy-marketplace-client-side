@@ -16,7 +16,7 @@ const ExtraSectionTeam = () => {
           <img
            data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
-            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
             alt="Person"
           />
           <div className="flex flex-col items-center">
@@ -28,7 +28,7 @@ const ExtraSectionTeam = () => {
           <img
            data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
-            src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg"
             alt="Person"
           />
           <div className="flex flex-col items-center">
@@ -40,7 +40,7 @@ const ExtraSectionTeam = () => {
           <img
            data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
             alt="Person"
           />
           <div className="flex flex-col items-center">
@@ -52,7 +52,7 @@ const ExtraSectionTeam = () => {
           <img
            data-aos="flip-right"
             className="object-cover w-20 h-20 mb-2 rounded-full shadow border-2 p-1 border-green-500"
-            src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg"
             alt="Person"
           />
           <div className="flex flex-col items-center">
