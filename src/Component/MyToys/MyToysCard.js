@@ -1,12 +1,12 @@
-import { Avatar, Checkbox, Table } from 'flowbite-react';
-import React, { useState } from 'react';
+import { Avatar,  Table } from 'flowbite-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MyToysCard = ({toys,handleDelete}) => {
-const [newtoys, setNewData]=useState([])
-  const {pictureURL, name, price, rating, sellerName, email, description ,subCategory, _id ,quantity
+
+  const {pictureURL, name, price, rating, sellerName,  description ,subCategory, _id ,quantity
   }=toys
-console.log(newtoys);
+
 
     return (
       <>

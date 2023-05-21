@@ -1,9 +1,9 @@
-import { Avatar, Card, Table } from 'flowbite-react';
+import { Avatar,  Table } from 'flowbite-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const AllToysCard = ({toy}) => {
-    const {pictureURL, name, price, rating, sellerName, email, description , subCategory,_id ,quantity
+    const {pictureURL, name, price, rating, sellerName, description , subCategory,_id ,quantity
     }=toy
     return (
         <>
@@ -52,12 +52,7 @@ const AllToysCard = ({toy}) => {
              </Link>
       </Table.Cell>
       <Table.Cell>
-      {/* <button onClick={()=>handleDelete(_id)}
-                type="submit"
-                className="inline-flex items-center justify-center h-6 px-3 mr-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-500"
-              >
-                Delete
-              </button> */}
+    
       </Table.Cell>
     </Table.Row>
  

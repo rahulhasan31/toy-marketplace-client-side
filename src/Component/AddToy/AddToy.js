@@ -108,6 +108,7 @@ const AddToy = () => {
                        defaultValue={user?.displayName}
                         required={true}
                         name="SellerName"
+                        readOnly
                     />
                 </div>
                 <div>
@@ -123,6 +124,7 @@ const AddToy = () => {
                         defaultValue={user?.email}
                         required={true}
                         name="SellerEmail"
+                        readOnly
                     />
                 </div>
                 <div>
@@ -134,6 +136,8 @@ const AddToy = () => {
             <option value="Lamborghini">Lamborghini</option>
             <option value="Ferrari">Ferrari</option>
             <option value="Race Car">Race Car</option>
+            <option value="Trucks">Trucks</option>
+            <option value="Mini Police Cars">Mini Police Cars</option>
           </select>
                 </div>
                 <div>
@@ -201,7 +205,7 @@ const AddToy = () => {
 
 
 
-                <Button type="submit">
+                <Button className='bg-green-500' type="submit">
                     Submit
                 </Button>
             </form>

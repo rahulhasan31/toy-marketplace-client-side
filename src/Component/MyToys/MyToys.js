@@ -1,5 +1,6 @@
-import { Checkbox, Table } from 'flowbite-react';
+import {  Table } from 'flowbite-react';
 import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Auth/AuthProvider';
 import useTitle from '../../Hook/UseTitle';
@@ -37,7 +38,8 @@ const MyToys = () => {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
-          }).then((result) => {
+          })
+          .then((result) => {
             if (result.isConfirmed) {
               Swal.fire(
                 'Deleted!',
@@ -91,7 +93,7 @@ const MyToys = () => {
     </div>
       <div data-aos="fade-up"
      data-aos-duration="3000" className='p-10'>
-        <Table striped={true}>
+       {toysData.length>0? <Table striped={true}>
           <Table.Head className=''>
             <Table.HeadCell>
               Picture 
@@ -132,7 +134,7 @@ const MyToys = () => {
           {
             toysData.map(toys => <MyToysCard handleDelete={handleDelete} key={toys._id} toys={toys} ></MyToysCard>)
           }
-        </Table>
+        </Table>:<h1 className='text-green-500 font-medium text-2xl text-center'> You Not Add Toys If You Wish Add Toy Please Go Add Section <Link className='text-red-500 font-semibold underline' to={'/add-toy'}>Clike Here</Link></h1>}
       </div>
     </>
   );

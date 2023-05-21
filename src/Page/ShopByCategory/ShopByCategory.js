@@ -22,8 +22,7 @@ console.log(data);
 const needLogin=()=>{
   return Swal.fire({
     icon: 'error',
-    title: 'Oops...',
-    text: 'You Not Login Plase login',
+    title: 'NO ENTRY WITHOUT PERMISSION!!!! IF YOU NEED PERMISSION PLEASE LOGIN...',
     footer: '<a href="/login">Login Now </a>'
   })
 }

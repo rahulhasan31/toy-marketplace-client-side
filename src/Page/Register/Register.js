@@ -1,13 +1,13 @@
-import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
+import { Button, Label, TextInput } from 'flowbite-react';
 import React, { useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Auth/AuthProvider';
 import useTitle from '../../Hook/UseTitle';
 
 const Register = () => {
   useTitle("Register")
-  const{user, createUser, updateProfileUser}=useContext(AuthContext)
+  const{ createUser, updateProfileUser}=useContext(AuthContext)
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -138,12 +138,12 @@ const handleUpdateProfile=(name, photoURL)=>{
    
     <Label htmlFor="agree">
       Already Have Acoount 
-      <a
-        href="/forms"
+      <Link
+        t="/login"
         className="text-blue-600 hover:underline dark:text-blue-500 ml-1"
       >
         Login Now
-      </a>
+      </Link>
     </Label>
   </div>
   <Button type="submit">
