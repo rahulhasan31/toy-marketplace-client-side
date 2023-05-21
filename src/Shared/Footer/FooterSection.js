@@ -1,6 +1,6 @@
 import { Footer } from 'flowbite-react';
 import React from 'react';
-import {  BsFacebook } from 'react-icons/bs';
+import {  BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const FooterSection = () => {
     return (
@@ -11,7 +11,7 @@ const FooterSection = () => {
       <div>
         <Footer.Brand
           href="https://flowbite.com"
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="https://designcontest.nyc3.digitaloceanspaces.com/data/contests/95925/entries/82b0c72379298b2c.jpg"
           alt="Flowbite Logo"
           name="Toys Hub"
         />
@@ -56,8 +56,8 @@ const FooterSection = () => {
     <div className="w-full sm:flex sm:items-center sm:justify-between">
       <Footer.Copyright
         href="#"
-        by="Flowbite™"
-        year={2022}
+        by="Rahul Dev™"
+        year={2023}
       />
       <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
         <Footer.Icon
@@ -66,19 +66,19 @@ const FooterSection = () => {
         />
         <Footer.Icon
           href="#"
-          icon={"BsInstagram"}
+          icon={BsInstagram}
         />
         <Footer.Icon
           href="#"
-          icon={"BsTwitter"}
+          icon={BsTwitter}
         />
         <Footer.Icon
           href="#"
-          icon={"BsGithub"}
+          icon={BsGithub}
         />
         <Footer.Icon
           href="#"
-          icon={"BsDribbble"}
+          icon={BsDribbble}
         />
       </div>
     </div>

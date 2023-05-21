@@ -30,11 +30,11 @@ const Header = () => {
                         className="mr-3 h-6 sm:h-9"
                         alt="Sports Toys House"
                     />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                    Sports Toys House
+                    <span className=" whitespace-nowrap text-xl font-semibold text-green-500 dark:text-white">
+                    <span className='text-red-600'>Sports</span> Toys House
                     </span>
                 </Navbar.Brand>
-                <div className="flex md:order-2">
+                <div className="flex md:order-2 w-20">
                     <Dropdown
                         arrowIcon={false}
                         inline={true}

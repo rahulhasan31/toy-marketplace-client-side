@@ -8,6 +8,8 @@ import Details from "../Page/Details/Details";
 import Home from "../Page/Home/Home";
 import Login from "../Page/Login/Login";
 import Register from "../Page/Register/Register";
+import Blog from "../Shared/Blog/Blog";
+import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import PrivateRouter from "./Private/PrivateRouter";
 
 
@@ -16,7 +18,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main />,
-        errorElement: "",
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
 
             {
@@ -59,6 +61,11 @@ export const router = createBrowserRouter([
                 path:"/details/:id",
                 element:<PrivateRouter><Details/></PrivateRouter>,
                 loader:({params})=>fetch(`http://localhost:3000/all-toys/${params.id}`)
+   },
+   
+   {
+path:"/blog",
+element:<Blog></Blog>
    }
 
         ]

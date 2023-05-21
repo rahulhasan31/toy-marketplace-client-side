@@ -77,10 +77,10 @@ const needLogin=()=>{
 
                         {
                           user?.email?<>
-                            <button className="bg-indigo-500 btn-sm text-white px-5  rounded">
+                            <button className="bg-green-500 btn-sm text-white px-5  rounded">
                             <Link to={`/toysDetails/${toy._id}`}> View details</Link>
                           </button></>: <button 
-                        onClick={needLogin} className="bg-indigo-500 btn-sm text-white px-5  rounded">
+                        onClick={needLogin} className="bg-green-500 btn-sm text-white px-5  rounded">
                             <Link > View details</Link>
                           </button>
                         }

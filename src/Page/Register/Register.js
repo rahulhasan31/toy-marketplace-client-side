@@ -3,8 +3,10 @@ import React, { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Auth/AuthProvider';
+import useTitle from '../../Hook/UseTitle';
 
 const Register = () => {
+  useTitle("Register")
   const{user, createUser, updateProfileUser}=useContext(AuthContext)
 
   const location = useLocation();

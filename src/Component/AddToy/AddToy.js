@@ -3,8 +3,10 @@ import React, { useContext,  } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Auth/AuthProvider';
+import useTitle from '../../Hook/UseTitle';
 
 const AddToy = () => {
+    useTitle("Add Toy")
     const { user } = useContext(AuthContext)
     
     const navigate = useNavigate();
@@ -60,6 +62,7 @@ const AddToy = () => {
  
     return (
         <>
+        
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-20 mx-auto w-4/5">
                 <div>
                     <div className="mb-2 block">

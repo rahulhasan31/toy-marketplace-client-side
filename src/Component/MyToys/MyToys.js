@@ -2,9 +2,11 @@ import { Checkbox, Table } from 'flowbite-react';
 import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Auth/AuthProvider';
+import useTitle from '../../Hook/UseTitle';
 import MyToysCard from './MyToysCard';
 
 const MyToys = () => {
+  useTitle("My Toy")
   const { user } = useContext(AuthContext)
   const [toysData, setData] = useState([])
 
@@ -53,7 +55,35 @@ const MyToys = () => {
   }
   return (
     <>
-
+         <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  mt-5">
+      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+            Toy Brand new
+          </p>
+        </div>
+        <h2 className="max-w-lg mb-6  text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <span className="relative inline-block">
+          
+            <span className="relative text-red-500">Hey</span>
+          </span>{' '}
+           <span className='text-green-500'>Wellcome to My Toys</span>
+        </h2>
+        <p className="text-base text-gray-700 md:text-lg">
+        Thank you for choosing "My Toys" as your go-to destination for all things fun and playful. We look forward to serving you and making your toy shopping experience exceptional in every way
+        </p>
+      </div>
+      <div className="mx-auto lg:max-w-2xl">
+        <div className="relative w-full transition-shadow duration-300 hover:shadow-xl">
+          <img
+            className="object-cover w-full h-56 rounded p-5 sm:h-64 md:h-80 lg:h-96"
+            src="https://i.pinimg.com/564x/82/36/86/82368662c2400c206e4f874e39347b91.jpg"
+            alt=""
+          />
+          
+        </div>
+      </div>
+    </div>
       <div className='p-10'>
         <Table striped={true}>
           <Table.Head className=''>
