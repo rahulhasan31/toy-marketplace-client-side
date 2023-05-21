@@ -4,7 +4,8 @@ const ExtraSectionCard = () => {
     return (
         <>
             <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mb-10">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
                     <div>
                         <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full bg-green-400">
                            Toy Brand new

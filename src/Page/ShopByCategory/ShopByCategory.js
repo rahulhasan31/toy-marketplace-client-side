@@ -30,8 +30,10 @@ const needLogin=()=>{
   
     return (
         <>
-  <h1 className='mx-auto text-center text-xl bg-green-400 py-3 px-4 w-56 rounded-full text-white font-semibold'>Shop By Category</h1>
-  <Tabs className="text-center p-20">
+  <h1 data-aos="fade-up"
+     data-aos-duration="3000" className='mx-auto text-center text-xl bg-green-400 py-3 px-4 w-56 rounded-full text-white font-semibold'>Shop By Category</h1>
+  <Tabs data-aos="fade-up"
+     data-aos-duration="3000" className="text-center p-20">
         <TabList>
           {data.map((category, index) => (
             <Tab key={index}>{category.CategoryName}</Tab>
@@ -39,20 +41,23 @@ const needLogin=()=>{
         </TabList>
 
         {data.map((category, index) => (
-          <TabPanel key={index}>
+          <TabPanel  key={index}>
             <div className="grid lg:grid-cols-2 gap-4">
 
 
               {category.toys.map((toy, subIndex) => (
 
                 
-                <div key={subIndex} className="bg-white p-4 shadow-xl border-2 border-green-400">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" key={subIndex} className="bg-white p-4 shadow-xl border-2 border-green-400">
                   <div className="bg-white rounded-lg  overflow-hidden">
                     <div className="lg:flex">
                       {/* Image side */}
                       <div className="lg:w-1/2">
                         <figure>
                           <img
+                          
                             src={toy.pictureURL}
                             alt={toy.name}
                             className=" w-5/2 h-1/2 mb-2 "

@@ -88,11 +88,17 @@ const Branner = () => {
      data-aos-duration="1500" className="flex items-center justify-center -mx-4 lg:pl-8">
           <div className="flex flex-col items-end px-3">
             <img
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
               src="https://i.pinimg.com/564x/0e/0c/18/0e0c18173f07eddbbb7f7bb41cb42eb7.jpg"
               alt=""
             />
             <img
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
               className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
               src="https://i.pinimg.com/564x/3a/55/6e/3a556eebcd3af5504ceb6c7839532dce.jpg"
               alt=""
@@ -100,6 +106,9 @@ const Branner = () => {
           </div>
           <div className="px-3">
             <img
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
               className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
               src="https://i.pinimg.com/564x/c5/fb/08/c5fb08131a0de6c4a9f0b1d26b0de14c.jpg"
               alt=""
