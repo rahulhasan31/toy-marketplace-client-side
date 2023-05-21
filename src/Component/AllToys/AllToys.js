@@ -8,19 +8,17 @@ import AllToysCard from './AllToysCard';
 const AllToys = () => {
     useTitle("All Toy")
 const [allToys, setAllToys]=useState([])
-const [searchText, setSearchText] = useState('');
+const [searchTerm, setSearchTerm] = useState('');
 const [searchResults, setSearchResults] = useState([]);
 
 const handleSearch = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/all-toys', {
-      params: {
-        name: searchText
-      }
+    const response = await axios.get('http://localhost:3000/my-toys/search', {
+      params: { searchTerm },
     });
     setSearchResults(response.data);
   } catch (error) {
-    console.error('Error searching for toys:', error);
+    console.error(error);
   }
 };
 useEffect(()=>{
@@ -29,10 +27,10 @@ useEffect(()=>{
     .then(data=> setAllToys(data))
 },[])
 
-console.log(allToys);
+console.log(searchResults);
     return (
         <div className=''>
-         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+         <div className="  px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2  ">
         <div className="lg:pr-10">
           <a
@@ -114,17 +112,22 @@ console.log(allToys);
         </div>
       </div>
     </div>  
-             <div>
+    <div className='text-center'>
       <input
         type="text"
-        value={searchText}
-        onChange={(event) => setSearchText(event.target.value)}
         placeholder="Search by Toy Name"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="border-green-500 px-5 py-3 rounded-s-lg"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='inline-flex items-center font-semibold transition-colors duration-200 text-white bg-green-500 px-5 py-3  rounded-r-lg' onClick={handleSearch}>Search</button>
+
       <ul>
-        {searchResults.map((toy, index) => (
-          <li key={index}>{toy.name}</li>
+        {
+          searchResults.length>0 ?<p className='mt-2 text-red-500 font-medium'>This Name Toy Available {searchResults.length}</p>:''
+        }
+        {searchResults?.map((toy) => (
+          <li key={toy._id} className="text-lg border border-green-500 w-96 text-center mx-auto mt-3">{toy.name}</li>
         ))}
       </ul>
     </div>
@@ -168,7 +171,7 @@ console.log(allToys);
             </Table.HeadCell>
           </Table.Head>
           {
-                allToys.map(toy=><AllToysCard key={toy._id} toy={toy}></AllToysCard> )
+              searchResults.length? searchResults.map(toy=><AllToysCard key={toy._id} toy={toy}></AllToysCard> ) : allToys.map(toy=><AllToysCard key={toy._id} toy={toy}></AllToysCard> )
             }
         </Table>
        

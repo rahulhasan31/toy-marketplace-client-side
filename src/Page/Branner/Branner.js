@@ -7,7 +7,7 @@ const Branner = () => {
            
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+        <div data-aos="zoom-in" className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-200">
             <svg className="text-teal-900 w-7 h-7 " viewBox="0 0 24 24">
               <polyline
@@ -51,7 +51,7 @@ const Branner = () => {
               />
             </svg>
           </div>
-          <div className="max-w-xl mb-6">
+          <div data-aos="zoom-in" className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-green-400 sm:text-4xl sm:leading-none">
             Hey Wellcome to
               <br className="hidden md:block" />
@@ -83,7 +83,9 @@ const Branner = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
+        <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="flex items-center justify-center -mx-4 lg:pl-8">
           <div className="flex flex-col items-end px-3">
             <img
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
