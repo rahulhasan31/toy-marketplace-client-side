@@ -1,11 +1,12 @@
 import { Button, Label, TextInput } from 'flowbite-react';
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Update = () => {
     const data=useLoaderData()
     const [update, setUpdate]=useState(data)
-
+    const navigate = useNavigate();
     console.log(data);
 
     const handleUpdateUser = event =>{
@@ -22,6 +23,12 @@ const Update = () => {
         .then(data => {
             if (data.modifiedCount > 0){
                 alert('Toys updated')
+                Swal.fire(
+                    'Good job!',
+                    'You clicked the button!',
+                    'success'
+                  )
+                  navigate('/my-toy')
                 console.log(data);
             }
             
@@ -37,7 +44,8 @@ const Update = () => {
     }
     return (
         <>
-            <form onSubmit={handleUpdateUser} className="flex flex-col gap-4 p-20 mx-auto w-4/5">
+            <form data-aos="fade-up"
+     data-aos-duration="3000" onSubmit={handleUpdateUser} className="flex flex-col gap-4 p-20 mx-auto w-4/5">
              
                 <div>
                     <div className="mb-2 block">

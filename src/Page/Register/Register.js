@@ -34,13 +34,7 @@ const handleRegister=event=>{
     imageAlt: 'A tall image'
   })
   navigate(from ,{replace: true})
-  // Swal.fire(
-  //   'Register Success',
-  //   'You clicked the button!',
-  //   'success'
-  // )
-  // navigate(from ,{replace: true})
-  // Wreload()
+ 
 
   handleUpdateProfile(name, photoURL)
  
@@ -69,9 +63,12 @@ const handleUpdateProfile=(name, photoURL)=>{
   .catch(e=> console.error(e))
 }
     return (
-        <div className='grid lg:grid-cols-2 mx-auto lg:p-20'>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" className='grid lg:grid-cols-2 mx-auto lg:p-20'>
           <div>
-            <img alt='' className='' src='https://i.ibb.co/cJzFnnQ/animation-640-lhsot7e4.gifhttps://i.ibb.co/RC3Nq0S/38435-register.gif'></img>
+            <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" alt='' className='' src='https://i.ibb.co/cJzFnnQ/animation-640-lhsot7e4.gifhttps://i.ibb.co/RC3Nq0S/38435-register.gif'></img>
           </div>
              <form onSubmit={handleRegister} className="flex flex-col gap-4 lg:mt-10 p-5">
   <div>

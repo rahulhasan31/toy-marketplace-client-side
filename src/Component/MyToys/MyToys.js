@@ -89,7 +89,8 @@ const MyToys = () => {
         </div>
       </div>
     </div>
-      <div className='p-10'>
+      <div data-aos="fade-up"
+     data-aos-duration="3000" className='p-10'>
         <Table striped={true}>
           <Table.Head className=''>
             <Table.HeadCell>

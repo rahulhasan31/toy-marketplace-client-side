@@ -63,7 +63,8 @@ const AddToy = () => {
     return (
         <>
         
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-20 mx-auto w-4/5">
+            <form data-aos="fade-up"
+     data-aos-duration="3000" onSubmit={handleSubmit} className="flex flex-col gap-4 p-20 mx-auto w-4/5">
                 <div>
                     <div className="mb-2 block">
                         <Label

@@ -67,9 +67,13 @@ const Login = () => {
     }
     return (
         <div>
-            <div className='grid lg:grid-cols-2 mx-auto lg:p-20'>
+            <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className='grid lg:grid-cols-2 mx-auto lg:p-20'>
                 <div>
-                    <img alt='' className='w-3/4' src='https://i.ibb.co/X2wfhjs/animation-640-lhsyjaqj.gif'></img>
+                    <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" alt='' className='w-3/4' src='https://i.ibb.co/X2wfhjs/animation-640-lhsyjaqj.gif'></img>
                 </div>
                 <form onSubmit={handleLogin} className="flex flex-col gap-4 lg:mt-10 p-5">
 
